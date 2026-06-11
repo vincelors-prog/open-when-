@@ -32,15 +32,38 @@ h1 {
     cursor: pointer;
 }
 
+css
 .letter {
     display: none;
     max-width: 700px;
     margin: 30px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    background: linear-gradient(to bottom, #fffdfd, #fff5f8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     text-align: left;
+    border: 3px solid #ffb6c1;
+    position: relative;
+}
+
+.letter::before {
+    content: "💌";
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    font-size: 30px;
+    background: white;
+    padding: 0 8px;
+}
+
+.letter::after {
+    content: "❤️ ❤️ ❤️";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.7;
+}
+
 }
 </style>
 </head>
