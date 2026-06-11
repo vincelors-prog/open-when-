@@ -1,0 +1,110 @@
+!DOCTYPE html
+html lang=en
+head
+meta charset=UTF-8
+meta name=viewport content=width=device-width, initial-scale=1.0
+titleOpen When...title
+
+style
+    body {
+        font-family Arial, sans-serif;
+        background linear-gradient(135deg, #ffd6e7, #ffeccf);
+        text-align center;
+        padding 50px;
+        min-height 100vh;
+        margin 0;
+    }
+
+    h1 {
+        color #333;
+        margin-bottom 40px;
+    }
+
+    .button {
+        background-color #ff6fa5;
+        color white;
+        border none;
+        padding 15px 30px;
+        margin 15px;
+        font-size 18px;
+        border-radius 15px;
+        cursor pointer;
+        transition 0.3s;
+    }
+
+    .buttonhover {
+        background-color #ff4d8d;
+        transform scale(1.05);
+    }
+
+    .letter {
+        display none;
+        max-width 700px;
+        margin 30px auto;
+        background white;
+        padding 25px;
+        border-radius 15px;
+        box-shadow 0 5px 15px rgba(0,0,0,0.15);
+        text-align left;
+        line-height 1.7;
+    }
+style
+head
+body
+
+h1💌 Open When...h1
+
+button class=button onclick=showLetter('birthday')
+🎂 Open When It's Your Birthday
+button
+
+button class=button onclick=showLetter('missme')
+❤️ Open When You Miss Me
+button
+
+div id=birthday class=letter
+    h2🎉 Happy Birthday!h2
+    p
+        Today is all about you. I hope your day is filled with laughter,
+        happiness, and everything you love.
+    p
+    p
+        No matter where we are, I want you to know how grateful I am for you.
+        You deserve all the good things this year can bring.
+    p
+    p
+        Happy Birthday! ❤️
+    p
+div
+
+div id=missme class=letter
+    h2❤️ When You Miss Meh2
+    p
+        If you're reading this, I hope you know that you're never as alone as
+        you feel.
+    p
+    p
+        Think about our favorite memories, the laughs we've shared, and all
+        the moments that made us smile.
+    p
+    p
+        Even if we're apart right now, you're important to me and I'm sending
+        you the biggest virtual hug.
+    p
+    p
+        Love you. ❤️
+    p
+div
+
+script
+function showLetter(id) {
+    document.querySelectorAll('.letter').forEach(letter = {
+        letter.style.display = 'none';
+    });
+
+    document.getElementById(id).style.display = 'block';
+}
+script
+
+body
+html
