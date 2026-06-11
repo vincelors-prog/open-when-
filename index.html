@@ -1,36 +1,91 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open When...</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #ffeccf);
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #ff6fa5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.letter {
+    display: none;
+    max-width: 700px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💌 Open When...</h1>
+
+<button class="button" onclick="showLetter('birthday')">
+🎂 Open When It's Your Birthday
+</button>
+
+<button class="button" onclick="showLetter('missme')">
+❤️ Open When You Miss Me
+</button>
+
 <div id="birthday" class="letter">
-    <h2>🎂❤️ Happy Birthday Linzee, My Pretty Girl! ❤️🎂</h2>
+    <h2>🎂 Happy Birthday Linzee, My Pretty Girl! 🎂</h2>
 
     <p>
-        Happy Birthday Linzee, My Pretty Girl! 🎂❤️
+        Happy Birthday Linzee, My Pretty Girl! 🎂
+        I know we cant spend your birthday together in person, but i wanted to make something a Little special just for you :)
     </p>
 
     <p>
-        I know we cant spend your birthday together in person, but I wanted to make something a little special just for you ❤️ :)
+        Even tho we only have been talking for roughly 60-70 Days (67 haha) it feels like our relationship has grown faster than i imagined it would when i first met you.
     </p>
 
     <p>
-        Even tho we only have been talking for roughly 60-70 days (67 haha) it feels like our relationship has grown faster than I imagined it would when I first met you. 💕
+        And today, having you in my Days has become the most important thing to me.
     </p>
 
     <p>
-        And today, having you in my days has become the most important thing to me. ❤️
+        I want to thank you for making me laugh Daily, making me smile for so long i forget i even had the smile on my face.
+        And ofc making me feel wanted by someone i really love.
     </p>
 
     <p>
-        I want to thank you for making me laugh daily, making me smile for so long I forget I even had the smile on my face. And ofc making me feel wanted by someone I really love. ❤️💕
+        I really wish i could be there and celebrate you instead, but until that happens just know that im thinking about you everyday,
+        and every second we are not texing.
     </p>
 
     <p>
-        I really wish I could be there and celebrate you instead, but until that happens just know that I'm thinking about you everyday, and every second we are not texting. 💖
-    </p>
-
-    <p>
-        Happy birthday my baby ❤️ and have a great birthday with your family.
-    </p>
-
-    <p>
-        You only celebrate your 17th birthday once in your life. ❤️❤️❤️
+        Happy birthday my baby and have a great birthday with your family.
+        you only celebrate 17th birthday once in your ❤️❤️❤️
     </p>
 </div>
 
@@ -42,40 +97,47 @@
     </p>
 
     <p>
-        You have opened this website for the first time but maybe you will open it more than once because you miss me. 💕
+        you have opened this website for the first time but maybe you will open it more than onces because you miss me.
+        maybe im not responding because im sleeping or im in class.
     </p>
 
     <p>
-        Maybe I'm not responding because I'm sleeping or I'm in class.
+        either way. I Always miss you too.
     </p>
 
     <p>
-        Either way, I always miss you too. ❤️
+        Even when were busy or doing our own thing, youre still the one person i Think about the most during the Days because you have shown me what it feels like to be loved by someone so cute and adorable as you!
     </p>
 
     <p>
-        Even when we're busy or doing our own thing, you're still the one person I think about the most during the days because you have shown me what it feels like to be loved by someone so cute and adorable as you! 💖
+        Distance can be annoying and lonely sometimes, but on calls, messages and moments we spend together means alot to me.
     </p>
 
     <p>
-        Distance can be annoying and lonely sometimes, but our calls, messages and moments we spend together mean a lot to me. ❤️
+        so here is your reminder:
     </p>
 
     <p>
-        So here is your reminder: 💕
+        Youre cute ❤️<br>
+        Youre amaing ❤️<br>
+        and yes youre still my pretty girl ❤️
     </p>
 
     <p>
-        ❤️ You're cute.<br>
-        ❤️ You're amazing.<br>
-        ❤️ And yes, you're still my pretty girl.
-    </p>
-
-    <p>
-        I'm so proud of you getting up in the mornings even tho the motivation isn't there and you still get yourself up to work. ❤️
-    </p>
-
-    <p>
-        I love you, my pretty girl. 💕❤️
+        and im so proud of you getting up in the mornings even tho the motivation isnt there and you still get yourself up to work ❤️
     </p>
 </div>
+
+<script>
+function showLetter(id) {
+    document.querySelectorAll('.letter').forEach(letter => {
+        letter.style.display = 'none';
+    });
+
+    document.getElementById(id).style.display = 'block';
+}
+</script>
+
+</body>
+</html>
+```
